@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 // Serve the frontend
-app.use(express.static(path.join(__dirname, 'Html')));
+app.use(express.static(path.join(__dirname, 'docs')));
 
 // Serve project-level assets (logo image in project root) at /assets/* so the frontend can reference them
 app.use('/assets', express.static(path.join(__dirname)));
@@ -89,7 +89,7 @@ app.post('/api/contact', async (req, res) => {
 
 // Fallback to index.html for root
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'Html', 'index.html'));
+    res.sendFile(path.join(__dirname, 'docs', 'index.html'));
 });
 
 function start(port) {

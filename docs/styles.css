@@ -328,12 +328,12 @@ body {
     <div class="contact-copy">
       <h2>Contact Us</h2>
       <p>Let’s discuss your hiring goals and timelines.</p>
-      <ul class="contact-list">
-        <li><strong>Company:</strong> Eminence HR Consulting</li>
-        <li><strong>Address:</strong> Pristine Alpine, KMR Estates, Hyderabad, Serilingampalle (M), TS 500084, India</li>
-        <li><strong>Email:</strong> <a href="mailto:nirmala@eminencehr.co.in">Nirmala@eminencehr.co.in</a></li>
-        <li><a href="mailto:bindhu@eminencehr.co.in">Bindhu@eminencehr.co.in</a></li>
-      </ul>
+      <div class="contact-details">
+        <p><strong>Company:</strong> Eminence HR Consulting</p>
+        <p><strong>Address:</strong> Pristine Alpine, KMR Estates, Hyderabad, Serilingampalle (M), TS 500084, India</p>
+        <p><strong>Email:</strong> <a href="mailto:nirmala@eminencehr.co.in">Nirmala@eminencehr.co.in</a></p>
+        <p><a href="mailto:bindhu@eminencehr.co.in">Bindhu@eminencehr.co.in</a></p>
+      </div>
     </div>
   </div>
 </section>
@@ -355,12 +355,20 @@ body {
   margin: 0 auto;
 }
 
-#contact .contact-list {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0 0;
-  text-align: center;
-/
+#contact .contact-details p {
+  margin: 0.5rem 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+#contact a {
+  color: var(--primary);
+  text-decoration: none;
+}
+#contact a:hover {
+  text-decoration: underline;
+}
+</style>
 
 /* Buttons */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 10px; text-decoration: none; border: 1px solid transparent; cursor: pointer; font-weight: 700; }

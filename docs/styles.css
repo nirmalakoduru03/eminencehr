@@ -578,3 +578,26 @@ html[data-theme="dark"] .kpi-arrow { color: var(--accent); }
 #contact {
   min-height: 80vh;  /* makes it fill 80% of viewport height */
 }
+/* Fix: Center-align the Contact section content fully */
+#contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* Centers horizontally */
+  justify-content: center;
+  text-align: center;     /* Centers text inside */
+}
+
+#contact .contact-copy {
+  text-align: center;
+  width: 100%;
+}
+
+#contact .contact-details {
+  text-align: center;
+}
+
+#contact .contact-details p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: var(--muted);
+}

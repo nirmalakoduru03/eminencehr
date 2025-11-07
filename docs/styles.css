@@ -547,3 +547,10 @@ html[data-theme="dark"] .kpi-star { color: var(--accent); }
 /* KPI up-arrow: default and dark override to ensure visibility */
 .kpi-arrow { color: var(--primary); }
 html[data-theme="dark"] .kpi-arrow { color: var(--accent); }
+
+#contact ul,
+#contact li {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}

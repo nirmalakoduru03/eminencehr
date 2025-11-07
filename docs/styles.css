@@ -341,7 +341,7 @@ body {
 
 .contact-form { display: grid; gap: 14px; background: var(--surface); border: 1px solid var(--border); padding: 18px; border-radius: 12px; }
 .contact-form label { display: grid; gap: 6px; font-size: 14px; }
-.contact-form input, .contact-form textarea { background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 10px 12px; border-radius: 8px; }
+.contact-form input, .contact-form textarea { background: var(--surface);color: var(--text); padding: 10px 12px;}
 .contact-form input:focus, .contact-form textarea:focus { outline: 3px solid var(--focus); border-color: transparent; }
 
 /* Buttons */

@@ -323,9 +323,16 @@ body {
     .card-cta { display: none; }
 }
 
-.contact-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 24px; }
-.contact-list { margin: 0; padding: 0; list-style: none; }
-.contact-list li { margin: 6px 0; }
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack content vertically */
+    text-align: center;     /* Center text inside */
+    margin: 0 auto;         /* Center the container horizontally */
+    padding: 2rem;          /* Optional: adds spacing */
+}
+
 
 /* Center contact section text */
 #contact .contact-copy { text-align: center; }

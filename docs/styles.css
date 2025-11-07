@@ -554,3 +554,27 @@ html[data-theme="dark"] .kpi-arrow { color: var(--accent); }
   margin: 0 !important;
   padding: 0 !important;
 }
+
+/* Center the Contact section content */
+#contact {
+  text-align: center;             /* Centers text */
+  display: flex;                 
+  justify-content: center;        /* Centers horizontally */
+  align-items: center;            /* Centers vertically (if there's height) */
+  flex-direction: column;         /* Stack items vertically */
+  padding: 60px 20px;             /* Space around section */
+}
+
+#contact .contact-copy {
+  max-width: 700px;               /* Keeps text readable */
+  margin: 0 auto;                 /* Centers the block */
+}
+
+#contact .contact-details p {
+  margin: 8px 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+#contact {
+  min-height: 80vh;  /* makes it fill 80% of viewport height */
+}

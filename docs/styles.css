@@ -338,7 +338,6 @@ body {
   </div>
 </section>
 
-<style>
 #contact {
   text-align: center;
 }
@@ -368,7 +367,7 @@ body {
 #contact a:hover {
   text-decoration: underline;
 }
-</style>
+
 
 /* Buttons */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 10px; text-decoration: none; border: 1px solid transparent; cursor: pointer; font-weight: 700; }

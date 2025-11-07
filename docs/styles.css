@@ -323,25 +323,44 @@ body {
     .card-cta { display: none; }
 }
 
-.contact-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Stack content vertically */
-    text-align: center;     /* Center text inside */
-    margin: 0 auto;         /* Center the container horizontally */
-    padding: 2rem;          /* Optional: adds spacing */
+<section id="contact" class="section" role="region" aria-label="Contact">
+  <div class="container">
+    <div class="contact-copy">
+      <h2>Contact Us</h2>
+      <p>Let’s discuss your hiring goals and timelines.</p>
+      <ul class="contact-list">
+        <li><strong>Company:</strong> Eminence HR Consulting</li>
+        <li><strong>Address:</strong> Pristine Alpine, KMR Estates, Hyderabad, Serilingampalle (M), TS 500084, India</li>
+        <li><strong>Email:</strong> <a href="mailto:nirmala@eminencehr.co.in">Nirmala@eminencehr.co.in</a></li>
+        <li><a href="mailto:bindhu@eminencehr.co.in">Bindhu@eminencehr.co.in</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+#contact {
+  text-align: center;
 }
 
+#contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-/* Center contact section text */
-#contact .contact-copy { text-align: center; }
-#contact .contact-list { text-align: center; }
+#contact .contact-copy {
+  max-width: 700px;
+  margin: 0 auto;
+}
 
-.contact-form { display: grid; gap: 14px; background: var(--surface); border: 1px solid var(--border); padding: 18px; border-radius: 12px; }
-.contact-form label { display: grid; gap: 6px; font-size: 14px; }
-.contact-form input, .contact-form textarea { background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 10px 12px; border-radius: 8px; }
-.contact-form input:focus, .contact-form textarea:focus { outline: 3px solid var(--focus); border-color: transparent; }
+#contact .contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  text-align: center;
+/
 
 /* Buttons */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 10px; text-decoration: none; border: 1px solid transparent; cursor: pointer; font-weight: 700; }
